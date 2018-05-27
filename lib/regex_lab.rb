@@ -7,9 +7,8 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  return text.scan(/\b+\Aun\w*ing\z/)
-  #new_text = text.split(' ')
-  #new_text.select {|word| word.match(/\Aun\w*ing\z/)}
+  new_text = text.split(' ')
+  new_text.select {|word| word.match(/\Aun\w*ing\z/)}
 end
 
 def words_five_letters_long(text)
